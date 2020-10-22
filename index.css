@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.top {
+  width: 100vw;
+  position: absolute;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sky {
+  background: url("images/sky.png");
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  background-size: cover;
+}
+
+.quiz {
+  position: absolute;
+  top: 10px;
+}
+
+.night-city {
+  background: url("images/night_city.png");
+  width: 500%;
+  height: 360px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: leaving 15s linear infinite;
+}
+
+@keyframes leaving {
+  100% {
+    transform: translateX(-3000px);
+  }
+}
+
+.star-1 img {
+  width: 50px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  /* animation-name: shining; */
+  animation: shining 3s linear infinite;
+}
+
+.star-2 img {
+  width: 50px;
+  position: absolute;
+  top: 450px;
+  left: 300px;
+  animation: shining 3s linear infinite;
+}
+
+.star-3 img {
+  width: 50px;
+  position: absolute;
+  top: 340px;
+  left: 500px;
+  animation: shining 3s linear infinite;
+}
+
+.star-4 img {
+  width: 50px;
+  position: absolute;
+  top: 500px;
+  left: 680px;
+  animation: shining 3s linear infinite;
+}
+
+.star-5 img {
+  width: 50px;
+  position: absolute;
+  top: 450px;
+  right: 300px;
+  animation: shining 3s linear infinite;
+}
+
+@keyframes shining {
+  0% {
+    transform: rotate();
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.car-1 img {
+  width: 200px;
+  position: absolute;
+  bottom: 35px;
+  left: 200px;
+  animation: moving 2s linear infinite;
+}
+
+.car-2 img {
+  width: 200px;
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  animation: moving 2.5s linear infinite;
+}
+
+.car-3 img {
+  width: 200px;
+  position: absolute;
+  bottom: 35px;
+  left: 800px;
+  animation: moving 3s linear infinite;
+}
+
+.police-car img {
+  width: 200px;
+  position: absolute;
+  bottom: -5px;
+  left: 500px;
+  animation: moving 2s linear infinite;
+}
+
+.ambulance img {
+  width: 200px;
+  position: absolute;
+  bottom: -5px;
+  left: 960px;
+  animation: moving 2.5s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
